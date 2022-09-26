@@ -5,7 +5,7 @@ const Header = () => (
   <header>
     <div>
       <img src={logo} alt="logo" />
-      <a href="/"><h1>Space Travelers Hub</h1></a>
+      <h1>Space Travelers Hub</h1>
     </div>
     <nav>
       <Link to="/">Rockets</Link>
