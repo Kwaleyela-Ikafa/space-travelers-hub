@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const apiUrl = 'https://api.spacexdata.com/v3/rockets';
-const FETCH_ROCKETS = 'space-travel-hub/rockets/FETCH_ROCKETS';
+const FETCH_ROCKETS = 'rockets/FETCH_ROCKETS';
+
 const initialState = [];
 
 const onSuccess = (rockets) => ({
