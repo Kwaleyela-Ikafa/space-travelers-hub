@@ -22,7 +22,13 @@ const missionsReducer = (state = initialState, action) => {
           description: mission.description,
           active: false,
         }));
-
+    case 'change':
+      return state.map((mission) => {
+        if (mission.mission_id === action.id) {
+          return { ...mission, active: !mission.active };
+        }
+        return mission;
+      });
     default:
       return state;
   }

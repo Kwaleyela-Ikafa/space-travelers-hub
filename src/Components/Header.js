@@ -8,8 +8,8 @@ const Header = () => (
       <h1>Space Travelers Hub</h1>
     </div>
     <nav>
-      <Link to="/Dragons">Dragons</Link>
       <Link to="/">Rockets</Link>
+      <Link to="/Dragons">Dragons</Link>
       <Link to="/Missions">Missions</Link>
       <Link to="/MyProfile">MyProfile</Link>
     </nav>
