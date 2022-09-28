@@ -8,7 +8,7 @@ const Rocket = ({ rocket }) => (
       <div>
         <div>
           <h1>{rocket.name}</h1>
-          <div>{rocket.description}</div>
+          <p>{rocket.description}</p>
         </div>
         <div><button type="submit">Reserve Rocket</button></div>
       </div>
