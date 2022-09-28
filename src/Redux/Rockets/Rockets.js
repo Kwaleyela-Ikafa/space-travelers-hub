@@ -17,7 +17,7 @@ export const fetchRockets = async (dispatch) => {
     id: item.id,
     name: item.rocket_name,
     description: item.description,
-    flickrImages: item.flickr_images,
+    flickrImages: item.flickr_images[0],
   }));
   dispatch(onSuccess(fetchedData));
 };
