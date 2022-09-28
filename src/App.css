@@ -1,17 +1,17 @@
 html {
-    box-sizing:border-box;
-    font-size: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
 body {
-    padding: 0 5%;
+  padding: 0 5%;
 }
 
 * {
-    list-style: none;
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
 }
 
 *::before,
@@ -20,24 +20,24 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header div {
-    width: 40%;
-    display: flex;
-    gap: 5%;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
 }
 
 nav {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
-    height: 52px;
+  height: 52px;
 }
