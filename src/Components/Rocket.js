@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Rocket = ({ rocket }) => (
   <div>
     <div>
-      <div><img src={rocket.flickrImages[0]} alt="Rocket-Banner" /></div>
+      <div><img src={rocket.flickrImages} alt="Rocket-Banner" /></div>
       <div>
         <div>
           <h1>{rocket.name}</h1>
