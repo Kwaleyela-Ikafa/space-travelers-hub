@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
 import RocketPage from './pages/RocketPage';
-import Missions from './Components/Missions';
+import MissionsPage from './pages/MissionPage';
 import MyProfile from './Components/MyProfile';
 import Dragons from './Components/Dragon';
 
