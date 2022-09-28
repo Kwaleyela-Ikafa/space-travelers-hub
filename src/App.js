@@ -4,7 +4,7 @@ import Header from './Components/Header';
 import RocketPage from './pages/RocketPage';
 import MissionsPage from './pages/MissionPage';
 import MyProfile from './Components/MyProfile';
-import Dragons from './Components/Dragon';
+import Dragons from './pages/dragonPage';
 
 export const App = () => (
   <>
@@ -12,7 +12,7 @@ export const App = () => (
     <Routes>
       <Route path="/" element={<RocketPage />} />
       <Route path="/Dragons" element={<Dragons />} />
-      <Route path="/Missions" element={<Missions />} />
+      <Route path="/Missions" element={<MissionsPage />} />
       <Route path="/MyProfile" element={<MyProfile />} />
     </Routes>
   </>
