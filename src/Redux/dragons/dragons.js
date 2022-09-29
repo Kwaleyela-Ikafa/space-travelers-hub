@@ -47,6 +47,7 @@ export const fetchDragons = async (dispatch) => {
     .then((data) => data.map((item) => ({
       id: item.id,
       name: item.name,
+      description: item.description,
       type: item.type,
       flickrImages: item.flickr_images[0],
     })));

@@ -19,12 +19,15 @@ const Dragon = ({ dragon }) => {
   return (
     <div>
       <img src={dragon.flickrImages} alt="Rocket-Banner" />
-      <h1>{dragon.name}</h1>
-      <p>
-        {dragon.reserved && (<span className="badge">Reserved</span>)}
-        {dragon.type}
-      </p>
-      <button type="submit" onClick={reserveOrCancel}>{reserveWord}</button>
+      <div>
+        <h1>{dragon.name}</h1>
+        <p>
+          {dragon.reserved && (<span className="badge">Reserved</span>)}
+          {dragon.description}
+        </p>
+        <div>{dragon.type}</div>
+        <button type="submit" onClick={reserveOrCancel}>{reserveWord}</button>
+      </div>
     </div>
   );
 };
@@ -34,6 +37,7 @@ Dragon.propTypes = {
     id: PropTypes.string,
     name: PropTypes.string,
     type: PropTypes.string,
+    description: PropTypes.string,
     flickrImages: PropTypes.string,
     reserved: PropTypes.bool,
   }).isRequired,
