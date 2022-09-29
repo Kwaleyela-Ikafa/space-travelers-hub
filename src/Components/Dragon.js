@@ -7,8 +7,8 @@ const Dragon = ({ dragon }) => {
   const dispatch = useDispatch();
   let reserveWord;
 
-  if (dragon.reserved) reserveWord = 'Cancel';
-  else reserveWord = 'Reserve';
+  if (dragon.reserved) reserveWord = 'Cancel Dragon';
+  else reserveWord = 'Reserve Dragon';
 
   const reserveOrCancel = (e) => {
     e.preventDefault();
@@ -18,16 +18,10 @@ const Dragon = ({ dragon }) => {
 
   return (
     <div>
-      <div>
-        <div><img src={dragon.flickrImages} alt="Rocket-Banner" /></div>
-        <div>
-          <div>
-            <h1>{dragon.name}</h1>
-            <p>{dragon.type}</p>
-          </div>
-          <div><button type="submit" onClick={reserveOrCancel}>{reserveWord}</button></div>
-        </div>
-      </div>
+      <img src={dragon.flickrImages} alt="Rocket-Banner" />
+      <h1>{dragon.name}</h1>
+      <p>{dragon.type}</p>
+      <button type="submit" onClick={reserveOrCancel}>{reserveWord}</button>
     </div>
   );
 };
