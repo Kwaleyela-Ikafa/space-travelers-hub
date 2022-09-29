@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchDragons } from '../Redux/dragons/dragons';
+import Dragon from '../Components/Dragon';
 
 const Dragons = () => {
   const dispatch = useDispatch();
@@ -8,20 +9,13 @@ const Dragons = () => {
   useEffect(() => {
     dispatch(fetchDragons);
   }, []);
-  return dragons.map((dragon) => (
-    <div key={dragon.id}>
-      <div>
-        <div><img src={dragon.flickrImages[0]} alt="Dragon-Banner" /></div>
-        <div>
-          <div>
-            <h1>{dragon.name}</h1>
-            <p>{dragon.type}</p>
-          </div>
-          <div><button type="submit">Reserve Dragon</button></div>
-        </div>
-      </div>
+
+  return (
+    <div className="mb-5 mt-5 ">
+      {dragons.length ? dragons.map((dragon) => <Dragon key={dragon.id} dragon={dragon} />)
+        : <p>No Dragons available!</p>}
     </div>
-  ));
+  );
 };
 
 export default Dragons;
