@@ -22,6 +22,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 header div {
@@ -37,6 +38,102 @@ nav {
   justify-content: space-between;
 }
 
-img {
+ Header img {
   height: 52px;
+}
+
+.Container img {
+  max-width: 185px;
+}
+
+.Container {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 30px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.badge {
+  margin-right: 7px;
+  background-color: #4698a1;
+  color: white;
+  padding: 1px 4px;
+}
+
+.Line {
+  height: 0;
+  border: solid 1px #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.joinBtn {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 11px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.joinBtn:active {
+  background-color: #006AE8;
+}
+
+.joinBtn:hover {
+  background-color: #1C84FF;
+}
+
+.cancelBtn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+
+}
+
+.cancelBtn:hover {
+  background-color: #f7fafa;
+}
+
+.cancelBtn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
 }

@@ -17,16 +17,18 @@ const Dragon = ({ dragon }) => {
   };
 
   return (
-    <div>
+    <div className="Container">
       <img src={dragon.flickrImages} alt="Rocket-Banner" />
-      <div>
-        <h1>{dragon.name}</h1>
+      <div className="Content">
+        <h1 className="type">{dragon.name}</h1>
+        <div>{dragon.type}</div>
         <p>
           {dragon.reserved && (<span className="badge">Reserved</span>)}
           {dragon.description}
         </p>
-        <div>{dragon.type}</div>
-        <button type="submit" onClick={reserveOrCancel}>{reserveWord}</button>
+        <div>
+          <button type="submit" onClick={reserveOrCancel}>{reserveWord}</button>
+        </div>
       </div>
     </div>
   );
