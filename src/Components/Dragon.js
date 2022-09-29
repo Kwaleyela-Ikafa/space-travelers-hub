@@ -20,7 +20,10 @@ const Dragon = ({ dragon }) => {
     <div>
       <img src={dragon.flickrImages} alt="Rocket-Banner" />
       <h1>{dragon.name}</h1>
-      <p>{dragon.type}</p>
+      <p>
+        {dragon.reserved && (<span className="badge">Reserved</span>)}
+        {dragon.type}
+      </p>
       <button type="submit" onClick={reserveOrCancel}>{reserveWord}</button>
     </div>
   );
