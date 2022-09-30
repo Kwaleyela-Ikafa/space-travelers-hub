@@ -35,7 +35,7 @@ const Missions = () => {
             }}
             >
               {' '}
-              {mission.active ? 'Active Member' : 'NOT A MEMBER'}
+              <span className={mission.active ? 'status1' : 'status2'}>{mission.active ? 'Active Member' : 'NOT A MEMBER'}</span>
             </td>
             <td style={{
               textAlign: 'center',
@@ -45,6 +45,7 @@ const Missions = () => {
               {mission.active
                 ? (
                   <button
+                    className="cancelBtn"
                     onClick={() => buttonHandler(mission.mission_id)}
                     type="button"
                   >
@@ -52,6 +53,7 @@ const Missions = () => {
                   </button>
                 ) : (
                   <button
+                    className="joinBtn"
                     onClick={() => buttonHandler(mission.mission_id)}
                     type="button"
                   >

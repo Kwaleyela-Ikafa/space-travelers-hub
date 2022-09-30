@@ -38,7 +38,7 @@ nav {
   justify-content: space-between;
 }
 
- Header img {
+header img {
   height: 52px;
 }
 
@@ -72,49 +72,14 @@ nav {
 }
 
 .joinBtn {
-  align-items: center;
-  appearance: button;
-  background-color: #0276FF;
-  border-radius: 8px;
-  border-style: none;
-  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  font-family: "RM Neue",sans-serif;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  padding: 10px 11px;
-  text-align: center;
-  text-transform: none;
-  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.joinBtn:active {
-  background-color: #006AE8;
-}
-
-.joinBtn:hover {
-  background-color: #1C84FF;
-}
-
-.cancelBtn {
-  background-color: #fff;
+  background-color: #0276ff;
   border: 1px solid #d5d9d9;
   border-radius: 8px;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
   box-sizing: border-box;
-  color: #0f1111;
   cursor: pointer;
   display: inline-block;
-  font-family: "Amazon Ember",sans-serif;
+  font-family: "Amazon Ember", sans-serif;
   font-size: 13px;
   line-height: 29px;
   padding: 0 10px 0 11px;
@@ -125,7 +90,37 @@ nav {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
+  color: white;
+}
 
+.joinBtn:active {
+  background-color: #006ae8;
+}
+
+.joinBtn:hover {
+  background-color: #1c84ff;
+}
+
+.cancelBtn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
 }
 
 .cancelBtn:hover {
@@ -134,17 +129,36 @@ nav {
 
 .cancelBtn:focus {
   border-color: #008296;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
   outline: 0;
 }
+
 table {
   background-color: #0f1111;
+}
+
+tr {
+  background-color: white;
 }
 
 tr:nth-child(even) {
   background-color: rgb(243, 230, 230);
 }
 
-tr {
-  background-color: white;
+.status1 {
+  font-size: 14px;
+  background-color: #999;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.status2 {
+  font-size: 14px;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
 }
