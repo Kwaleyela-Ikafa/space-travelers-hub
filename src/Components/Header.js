@@ -10,14 +10,13 @@ const Header = () => (
       </div>
       <nav>
         <NavLink
-          to="/"
+          to="/Rockets"
           style={({ isActive }) => ({
             color: isActive ? '#fff' : '#545e6f',
             background: isActive ? '#7600dc' : '#f0f0f0',
           })}
         >
           Rockets
-
         </NavLink>
         <NavLink
           to="/Dragons"
@@ -27,10 +26,25 @@ const Header = () => (
           })}
         >
           Dragons
-
         </NavLink>
-        <NavLink to="/Missions">Missions</NavLink>
-        <NavLink to="/MyProfile">MyProfile</NavLink>
+        <NavLink
+          to="/Missions"
+          style={({ isActive }) => ({
+            color: isActive ? '#fff' : '#545e6f',
+            background: isActive ? '#7600dc' : '#f0f0f0',
+          })}
+        >
+          Missions
+        </NavLink>
+        <NavLink
+          to="/MyProfile"
+          style={({ isActive }) => ({
+            color: isActive ? '#fff' : '#545e6f',
+            background: isActive ? '#7600dc' : '#f0f0f0',
+          })}
+        >
+          MyProfile
+        </NavLink>
       </nav>
     </header>
     <div className="Line" />

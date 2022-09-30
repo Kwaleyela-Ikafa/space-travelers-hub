@@ -68,6 +68,19 @@ npm run deploy
 
 ## Authors
 
+
+👤 **Kwaleyela Musilizo Ikafa**
+
+- GitHub: [@Kwaleyela-Ikafa](https://github.com/Kwaleyela-Ikafa)
+- Twitter: [@K_Ikafa](https://twitter.com/K_Ikafa)
+- LinkedIn: [LinkedIn](https://zm.linkedin.com/in/kwaleyela-musilizo-ikafa-abaa1a20b?trk=people-guest_people_search-card)
+
+👤 **Juan Diaz (Juan Diaz)**
+
+- GitHub: [@juanmanuelbyc](https://github.com/juanmanuelbyc)
+- Twitter: [@twitter](https://twitter.com/juanmanueldiar)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-díaz-5281b3111/)
+
 👤 **Chaabane Anas**
 
 - GitHub: [@githubhandle](https://github.com/ChaabaneAnas)
