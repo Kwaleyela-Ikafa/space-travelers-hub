@@ -40,3 +40,29 @@ nav {
 img {
   height: 52px;
 }
+
+.myProfileContainer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.myRockets,
+.myMissions,
+.myDragons{
+  width: 30%;
+  height: 300px;
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.listItem{
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  border: solid gray 1px;
+  border-radius: 3px;
+  justify-content: center;
+}

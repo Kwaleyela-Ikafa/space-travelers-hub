@@ -9,18 +9,18 @@ const MyDragons = () => {
   if (dragons.length === 0) {
     return (
       <>
-        <div>
-          <h1>My Dragons:</h1>
+        <div className="myDragons">
+          <h1>My Dragons</h1>
           <p>You have no dragons reserved</p>
         </div>
       </>
     );
   }
   return (
-    <div>
+    <div className="myDragons">
       <h1>My Dragons:</h1>
       {dragons.map((dragon) => (
-        <p key={dragon.id}>
+        <p className="listItem" key={dragon.id}>
           {dragon.name}
         </p>
       ))}
