@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  padding: 0 5%;
+  padding: 1% 5%;
 }
 
 * {
@@ -136,4 +136,15 @@ nav {
   border-color: #008296;
   box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
   outline: 0;
+}
+table {
+  background-color: #0f1111;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(243, 230, 230);
+}
+
+tr {
+  background-color: white;
 }
