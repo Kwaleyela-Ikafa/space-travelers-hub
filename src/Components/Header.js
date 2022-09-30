@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../asses/space-traveler-logo.png';
+import logo from '../assets/space-traveler-logo.png';
 
 const Header = () => (
   <header>

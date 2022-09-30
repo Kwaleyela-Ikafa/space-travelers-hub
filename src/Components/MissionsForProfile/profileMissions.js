@@ -10,7 +10,7 @@ const MyMissions = () => {
     return (
       <>
         <div>
-          <h1>My Missions:</h1>
+          <h1>My Missions</h1>
           <p>You have no missions</p>
         </div>
       </>
@@ -18,7 +18,7 @@ const MyMissions = () => {
   }
   return (
     <div>
-      <h1>My Missions:</h1>
+      <h1>My Missions</h1>
       {missions.map((mission) => (
         <p key={mission.mission_id}>
           {mission.mission_name}
