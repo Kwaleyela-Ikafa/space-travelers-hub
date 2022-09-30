@@ -7,7 +7,7 @@ const MyRockets = () => {
   if (rockets.length === 0) {
     return (
       <>
-        <div>
+        <div className="myRockets">
           <h1>My Rockets</h1>
           <p>No rockets reserved</p>
         </div>
@@ -16,10 +16,10 @@ const MyRockets = () => {
   }
   return (
     <>
-      <div>
+      <div className="myRockets">
         <h1>My Rockets</h1>
         { rockets.map((rocket) => (
-          <p key={rocket.id}>
+          <p className="listItem" key={rocket.id}>
             {rocket.name}
           </p>
         ))}

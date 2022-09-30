@@ -9,7 +9,7 @@ const MyMissions = () => {
   if (missions.length === 0) {
     return (
       <>
-        <div>
+        <div className="myMissions">
           <h1>My Missions</h1>
           <p>You have no missions</p>
         </div>
@@ -17,10 +17,10 @@ const MyMissions = () => {
     );
   }
   return (
-    <div>
+    <div className="myMissions">
       <h1>My Missions</h1>
       {missions.map((mission) => (
-        <p key={mission.mission_id}>
+        <p className="listItem" key={mission.mission_id}>
           {mission.mission_name}
         </p>
       ))}

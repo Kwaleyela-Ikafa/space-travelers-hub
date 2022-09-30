@@ -4,7 +4,7 @@ import MyMissions from './MissionsForProfile/profileMissions';
 import MyDragons from './DragonsForProfile/profileDragons';
 
 const MyProfile = () => (
-  <div>
+  <div className="myProfileContainer">
     <MyMissions />
     <MyRockets />
     <MyDragons />
