@@ -42,7 +42,7 @@ header img {
   height: 52px;
 }
 
-.myProfileContainer{
+.myProfileContainer {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -50,7 +50,7 @@ header img {
 
 .myRockets,
 .myMissions,
-.myDragons{
+.myDragons {
   width: 30%;
   height: 300px;
   border: solid black 2px;
@@ -59,7 +59,7 @@ header img {
   border-radius: 5px;
 }
 
-.listItem{
+.listItem {
   display: flex;
   flex-direction: column;
   height: 30px;
@@ -67,6 +67,7 @@ header img {
   border-radius: 3px;
   justify-content: center;
 }
+
 .Container img {
   max-width: 185px;
 }
