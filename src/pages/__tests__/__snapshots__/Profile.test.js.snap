@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test my profile Button component render 1`] = `
-<div>
-  <div>
+<div
+  className="myProfileContainer"
+>
+  <div
+    className="myMissions"
+  >
     <h1>
       My Missions
     </h1>
@@ -10,7 +14,9 @@ exports[`Test my profile Button component render 1`] = `
       You have no missions
     </p>
   </div>
-  <div>
+  <div
+    className="myRockets"
+  >
     <h1>
       My Rockets
     </h1>
@@ -18,9 +24,11 @@ exports[`Test my profile Button component render 1`] = `
       No rockets reserved
     </p>
   </div>
-  <div>
+  <div
+    className="myDragons"
+  >
     <h1>
-      My Dragons:
+      My Dragons
     </h1>
     <p>
       You have no dragons reserved
