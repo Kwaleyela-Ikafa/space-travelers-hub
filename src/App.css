@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  padding: 0 5%;
+  padding: 1% 5%;
 }
 
 * {
@@ -22,6 +22,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 header div {
@@ -37,6 +38,127 @@ nav {
   justify-content: space-between;
 }
 
-img {
+header img {
   height: 52px;
+}
+
+.Container img {
+  max-width: 185px;
+}
+
+.Container {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 30px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.badge {
+  margin-right: 7px;
+  background-color: #4698a1;
+  color: white;
+  padding: 1px 4px;
+}
+
+.Line {
+  height: 0;
+  border: solid 1px #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.joinBtn {
+  background-color: #0276ff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  color: white;
+}
+
+.joinBtn:active {
+  background-color: #006ae8;
+}
+
+.joinBtn:hover {
+  background-color: #1c84ff;
+}
+
+.cancelBtn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.cancelBtn:hover {
+  background-color: #f7fafa;
+}
+
+.cancelBtn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+table {
+  background-color: #0f1111;
+}
+
+tr {
+  background-color: white;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(243, 230, 230);
+}
+
+.status1 {
+  font-size: 14px;
+  background-color: #999;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.status2 {
+  font-size: 14px;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
 }

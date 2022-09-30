@@ -1,7 +1,6 @@
 const apiUrl = 'https://api.spacexdata.com/v3/dragons';
 const FETCH_DRAGONS = 'dragons/FETCH_DRAGONS';
-const RESERVE_DRAGON = 'dragons/RESERVE_DRAGON';
-const CANCEL_DRAGON = 'dragons/CANCEL_DRAGON';
+export const CHANGE_STATUE = 'dragon/CHANGE_STATUE';
 
 const initialState = [];
 
@@ -9,20 +8,13 @@ const dragonReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_DRAGONS:
       return action.payload;
-    case RESERVE_DRAGON: {
-      const newState = state.map((dragon) => {
-        if (dragon.id !== action.payload) return dragon;
-        return { ...dragon, reserved: true };
+    case CHANGE_STATUE:
+      return state.map((dragon) => {
+        if (dragon.id === action.id) {
+          return { ...dragon, reserved: !dragon.reserved };
+        }
+        return dragon;
       });
-      return newState;
-    }
-    case CANCEL_DRAGON: {
-      const newState = state.map((dragon) => {
-        if (dragon.id !== action.payload) return dragon;
-        return { ...dragon, reserved: false };
-      });
-      return newState;
-    }
     default: { return state; }
   }
 };
@@ -32,23 +24,15 @@ const onSuccess = (dragons) => ({
   payload: dragons,
 });
 
-export const reserveDragon = (dragonId) => ({
-  type: RESERVE_DRAGON,
-  payload: dragonId,
-});
-
-export const cancelDragon = (dragonId) => ({
-  type: CANCEL_DRAGON,
-  payload: dragonId,
-});
-
 export const fetchDragons = async (dispatch) => {
   const response = await fetch(apiUrl).then((response) => response.json())
     .then((data) => data.map((item) => ({
       id: item.id,
       name: item.name,
+      description: item.description,
       type: item.type,
       flickrImages: item.flickr_images[0],
+      reserved: false,
     })));
   dispatch(onSuccess(response));
 };

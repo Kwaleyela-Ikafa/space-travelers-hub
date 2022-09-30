@@ -10,10 +10,10 @@ export const App = () => (
   <>
     <Header />
     <Routes>
-      <Route path="/" element={<RocketPage />} />
-      <Route path="/Dragons" element={<Dragons />} />
-      <Route path="/Missions" element={<Missions />} />
-      <Route path="/MyProfile" element={<MyProfile />} />
+      <Route exact path="/" element={<RocketPage />} />
+      <Route exact path="/Dragons" element={<Dragons />} />
+      <Route exact path="/Missions" element={<Missions />} />
+      <Route exact path="/MyProfile" element={<MyProfile />} />
     </Routes>
   </>
 );

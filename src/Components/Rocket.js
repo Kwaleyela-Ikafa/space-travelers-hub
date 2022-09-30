@@ -14,40 +14,40 @@ const Rocket = ({ rocket }) => {
   }, []);
 
   return (
-    <div>
-      <div>
-        <div><img src={rocket.flickrImages} alt="Rocket-Banner" /></div>
+    <div className="Container">
+      <img src={rocket.flickrImages} alt="Rocket-Banner" />
+      <div className="Content">
         <div>
+          <h3>{rocket.name}</h3>
           <div>
-            <h1>{rocket.name}</h1>
-            <div>
+            <p>
               {rocket.reserved && (
-              <badge className="bg-blue-500 p-1 text-white rounded-sm pr-3 pl-3">Reserved</badge>
+              <span className="badge">Reserved</span>
               )}
-              <p>
-                {rocket.description}
-              </p>
-            </div>
+              {rocket.description}
+            </p>
+          </div>
 
-          </div>
-          <div>
-            {rocket.reserved
-              ? (
-                <button
-                  onClick={() => handleChangeBtn(rocket.id)}
-                  type="button"
-                >
-                  Cancel Reservation
-                </button>
-              ) : (
-                <button
-                  onClick={() => handleChangeBtn(rocket.id)}
-                  type="button"
-                >
-                  Reserve Rocket
-                </button>
-              )}
-          </div>
+        </div>
+        <div>
+          {rocket.reserved
+            ? (
+              <button
+                className="cancelBtn"
+                onClick={() => handleChangeBtn(rocket.id)}
+                type="button"
+              >
+                Cancel Reservation
+              </button>
+            ) : (
+              <button
+                className="joinBtn"
+                onClick={() => handleChangeBtn(rocket.id)}
+                type="button"
+              >
+                Reserve Rocket
+              </button>
+            )}
         </div>
       </div>
     </div>
