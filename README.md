@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# React BookStore
+# space-travelers-hub 
 
 a web application for a company that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.
 
@@ -18,7 +18,7 @@ a web application for a company that provides commercial and scientific space tr
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://redux-react-book-store.netlify.app/)
+Coming Soon
 
 
 ## Getting Started
