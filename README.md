@@ -16,9 +16,9 @@ a web application for a company that provides commercial and scientific space tr
 - React-redux
 - webpack jest 
 
-## Live Demo (if available)
+## Live Demo
 
-Coming Soon
+[Live site](https://benevolent-figolla-1ff9d5.netlify.app)
 
 
 ## Getting Started
