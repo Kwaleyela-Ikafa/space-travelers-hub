@@ -8,12 +8,16 @@ const Dragons = () => {
   const dragons = useSelector((state) => state.dragons);
   useEffect(() => {
     dispatch(fetchDragons);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="mb-5 mt-5 ">
-      {dragons.length ? dragons.map((dragon) => <Dragon key={dragon.id} dragon={dragon} />)
-        : <p>No Dragons available!</p>}
+    <div className='mb-5 mt-5 '>
+      {dragons.length ? (
+        dragons.map((dragon) => <Dragon key={dragon.id} dragon={dragon} />)
+      ) : (
+        <p>No Dragons available!</p>
+      )}
     </div>
   );
 };

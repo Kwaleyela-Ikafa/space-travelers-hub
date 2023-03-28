@@ -8,12 +8,16 @@ const Rockets = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     if (!rockets.length) dispatch(fetchRockets);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="mb-5 mt-5 ">
-      {rockets.length ? rockets.map((rocket) => <Rocket key={rocket.id} rocket={rocket} />)
-        : <p>No Rockets available!</p>}
+    <div className='mb-5 mt-5 '>
+      {rockets.length ? (
+        rockets.map((rocket) => <Rocket key={rocket.id} rocket={rocket} />)
+      ) : (
+        <p>No Rockets available!</p>
+      )}
     </div>
   );
 };
