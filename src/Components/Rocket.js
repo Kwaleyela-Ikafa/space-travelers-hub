@@ -11,6 +11,7 @@ const Rocket = ({ rocket }) => {
   const rockets = useSelector((state) => state.rockets);
   useEffect(() => {
     if (!rockets.length) dispatch(fetchRockets());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
