@@ -87,8 +87,9 @@ header img {
 .badge {
   margin-right: 7px;
   background-color: #4698a1;
+  border-radius: 5px;
   color: white;
-  padding: 1px 4px;
+  padding: 2px 4px;
 }
 
 .Line {
