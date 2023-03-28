@@ -11,7 +11,7 @@ const Rocket = ({ rocket }) => {
   const rockets = useSelector((state) => state.rockets);
   useEffect(() => {
     if (!rockets.length) dispatch(fetchRockets());
-  eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -22,33 +22,29 @@ const Rocket = ({ rocket }) => {
           <h3>{rocket.name}</h3>
           <div>
             <p>
-              {rocket.reserved && (
-              <span className="badge">Reserved</span>
-              )}
+              {rocket.reserved && <span className="badge">Reserved</span>}
               {rocket.description}
             </p>
           </div>
-
         </div>
         <div>
-          {rocket.reserved
-            ? (
-              <button
-                className="cancelBtn"
-                onClick={() => handleChangeBtn(rocket.id)}
-                type="button"
-              >
-                Cancel Reservation
-              </button>
-            ) : (
-              <button
-                className="joinBtn"
-                onClick={() => handleChangeBtn(rocket.id)}
-                type="button"
-              >
-                Reserve Rocket
-              </button>
-            )}
+          {rocket.reserved ? (
+            <button
+              className="cancelBtn"
+              onClick={() => handleChangeBtn(rocket.id)}
+              type="button"
+            >
+              Cancel Reservation
+            </button>
+          ) : (
+            <button
+              className="joinBtn"
+              onClick={() => handleChangeBtn(rocket.id)}
+              type="button"
+            >
+              Reserve Rocket
+            </button>
+          )}
         </div>
       </div>
     </div>

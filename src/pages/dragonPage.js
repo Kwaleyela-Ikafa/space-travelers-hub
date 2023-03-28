@@ -12,7 +12,7 @@ const Dragons = () => {
   }, []);
 
   return (
-    <div className='mb-5 mt-5 '>
+    <div className="mb-5 mt-5 ">
       {dragons.length ? (
         dragons.map((dragon) => <Dragon key={dragon.id} dragon={dragon} />)
       ) : (

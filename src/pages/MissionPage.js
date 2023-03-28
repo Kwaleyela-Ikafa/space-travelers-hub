@@ -12,14 +12,14 @@ const Missions = () => {
   }, []);
   const buttonHandler = (id) => {
     dispatch({
-      type: 'change',
+      type: "change",
       id,
     });
   };
   return (
     <table>
       <tbody>
-        <tr className='th'>
+        <tr className="th">
           <th>Mission</th>
           <th>Description</th>
           <th>Statue</th>
@@ -31,34 +31,34 @@ const Missions = () => {
             <td>{mission.description}</td>
             <td
               style={{
-                textAlign: 'center',
-                width: '13%',
+                textAlign: "center",
+                width: "13%",
               }}
             >
-              {' '}
-              <span className={mission.active ? 'status1' : 'status2'}>
-                {mission.active ? 'Active Member' : 'NOT A MEMBER'}
+              {" "}
+              <span className={mission.active ? "status1" : "status2"}>
+                {mission.active ? "Active Member" : "NOT A MEMBER"}
               </span>
             </td>
             <td
               style={{
-                textAlign: 'center',
-                width: '13%',
+                textAlign: "center",
+                width: "13%",
               }}
             >
               {mission.active ? (
                 <button
-                  className='cancelBtn'
+                  className="cancelBtn"
                   onClick={() => buttonHandler(mission.mission_id)}
-                  type='button'
+                  type="button"
                 >
                   Leave Mission
                 </button>
               ) : (
                 <button
-                  className='joinBtn'
+                  className="joinBtn"
                   onClick={() => buttonHandler(mission.mission_id)}
-                  type='button'
+                  type="button"
                 >
                   Join Mission
                 </button>
